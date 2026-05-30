@@ -1,7 +1,12 @@
 # config.py
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Your live MongoDB Atlas connection string
-MONGO_URI = "mongodb+srv://greemich_db_user:3baGPSvdXp5fFOKl@exerciselib.amgs0mq.mongodb.net/?appName=ExerciseLib"
+MONGO_URI = os.getenv("MONGO_URI")
 
 # Database and collection names
 DB_NAME = "ExerciseLib"
