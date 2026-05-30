@@ -1,0 +1,1 @@
+A micro service that stores exercises by muscle group and equipment.
